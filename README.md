@@ -2,7 +2,7 @@
 
 - It is a Javascript superset. It is a programming language built on top of javascript.
 - Typescript compiler converts the typescript code into javascript.
-- Install Typescript Globally
+- Install Typescript Globally.
 `
  npm install -g typescript
 `
