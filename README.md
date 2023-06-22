@@ -7,4 +7,4 @@ ex: npm install -g typescript
 
 ### Compiling typescript
 
-- tsc filename.ts
+syntax: tsc filename.ts
