@@ -11,11 +11,13 @@
 
 ``` tsc filename.ts ```
 
-## Core Types
+## Core Types(lower case)
 
 - number
 - string
 - boolean
+- object
+- array
 
 
 ```
@@ -29,3 +31,39 @@ const n2 = 2.8;
 console.log(add(n1, n2));
 
 ```
+
+### Object type
+
+```
+// generic type we will get an error if we use person.name
+const person: object = {
+  name: "gnana",
+  age: 25,
+};
+
+const person: {
+  name: string;
+  age: number;
+  hobbies: string[];
+  address: {
+    area: string;
+    pincode: number;
+  };
+} = {
+  name: "gnana",
+  age: 25,
+  hobbies: ["cric", "football"],
+  address: {
+    area: "Hyderabad",
+    pincode: 123,
+  },
+};
+
+```
+
+### Array type
+
+```
+const a:number[]=[1,2,3];
+```
+
